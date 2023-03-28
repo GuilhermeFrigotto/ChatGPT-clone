@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./assents/bot.svg">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />    <title>Clone-Chatgpt</title>
+  </head>
+   
+  <body>
+    <div id="scrollable-div">
+      <div class="title">
+        <h1>ChatGPT - Generic</h1>
+      </div>
+      <div id="app">
+        <div id="chat_container"></div>
+        <form action="">
+          <textarea name="prompt" cols="1" rows="1" id="mensagem" required placeholder="Digite o que deseja..." onkeydown="verificarTecla(event)" ></textarea>
+          <span id="aviso" style="color: #343541;"></span>        
+          <button type="submit" onclick="verificarFormulario()">
+            <img src="./assents/bx-send.svg" alt="Enviar">
+          </button>
+        </form>
+      </div>
+      <script type="module" src="./script.js"></script>
+    </div>    
+  </body>
+</html>
